@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entradas</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+</head>
+<body>
+    <h1>Manejo de la entrada del usuario</h1>
+    <p>Directiva para detectar detectores de eventos: v-on</p>
+    <div id="app-5">
+        <p>{{message}}</p>
+        <button v-on:click="mensajeInverso">Mensaje Inverso</button>
+    </div>
+    <br>
+    <p>Enlace bidireccional entre la entrda y el estado de la aplicacion: v-model</p>
+    <div id="app-6">
+        <p>{{message}}</p>
+        <input v-model="message">
+    </div>
+
+    <br><a href="componente.html">Composicion con componentes >></a>
+    <script src="../jsUpdate/update.js"></script>
+</body>
+</html>

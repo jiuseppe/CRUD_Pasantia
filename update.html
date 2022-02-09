@@ -1,58 +1,29 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        Update
-    </head>
-    <body>
-        <h1>Actualización de Datos del Estudiantes</h1>
-        <form>
-            <table>
-                <tr>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>Cédula: </td>
-                    <td><input type="text" id="ci"></td>
-                    <td></td>
-                    <td>Nacionalidad: </td>
-                    <td><input type="text" id="nacionalidad"></td>
-                </tr>
-                <tr>
-                    <td>Paterno: </td>
-                    <td><input type="text" id="aPaterno"></td>
-                    <td></td>
-                    <td>Departamento: </td>
-                    <td><input type="text" id="depto"></td>
-                </tr>
-                <tr>
-                    <td>Materno: </td>
-                    <td><input type="text" id="aMaterno"></td>
-                    <td></td>
-                    <td>Correo: </td>
-                    <td><input type="email" id="correo"></td>
-                </tr>
-                <tr>
-                    <td>Nombres: </td>
-                    <td><input type="text" id="nombre"></td>
-                    <td></td>
-                    <td>Celular: </td>
-                    <td><input type="number" id="celular"></td>
-                </tr>
-                <tr>
-                    <td>Fecha de Nacimiento</td>
-                    <td><input type="date" id="fNacimiento"></td>
-                    <td></td>
-                    <td>Dirección: </td>
-                    <td><input type="text" id="direccion"></td>
-                </tr>
-                <tr>
-                    <td>Género: </td>
-                    <td><input type="text" id="genero"></td>
-                    <td></td>
-                    <td>Nro. Dipl. Bachiller: </td>
-                    <td><input type="number" id="dBachiller"></td>
-                </tr>
-            </table>
-        </form>
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+</head>
+<body>
+    <H1>Representación Declarativa</H1>
+    <!-- Declaracion de datos -->
+    <div id="app">
+        {{ message }}
+    </div><br>
+
+    <!-- Vincular atributos de elementos -->
+    <div id="app-2">
+        <span v-bind:title="message">
+            ¡Pase el Mouse sobre mi durante unos segundos
+             para ver mi titulo enlazado dinámicamente!
+        </span>
+    </div>
+
+    <br><a href="docUpdate/bucles.html">Condicionales y Bucles >></a>
+
+    <script src="jsUpdate/update.js"></script>
+</body>
 </html>
